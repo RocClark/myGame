@@ -6,3 +6,9 @@ body {
 a {
 color: green;
 }
+
+
+.gamePlace{
+  background:green;
+  border: .09rem solid red;
+}
