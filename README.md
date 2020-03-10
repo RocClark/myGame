@@ -12,6 +12,7 @@
         - craete scoreboard
         - check winner
         - create game state object
+        - print game state 
     o able mock a game
     o ai
     o reset game
