@@ -6,10 +6,19 @@ a {
 color: green;
 }
 
+.game-area{
+  padding-top: 3rem;
+}
+
+.gameboard{
+  height: 100vh;
+  width: 100vw;
+}
+
 
 .gamePlace{
   background:green;
   border: .09rem solid red;
   color: blue;
-
+  height: 9rem;
 }

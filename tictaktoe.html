@@ -1,71 +1,95 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    
-</head>
-<body>
-    <p>TIC TAK TOE</p>
-    
-    <div class="container gameboard">
-        <div class="row">
-            <div class="col gamePlace" id ="box-A1">
-                box-A1
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    </head>
+    <body>
+        <p>TIC TAK TOE</p>
+        <div class="container gameboard">
+            <div class="row score-area">
+                <div id="mainPlayer" class="col player">
+                    <div class=" col in-game d-none">
+                        <p><span class="player-name"></p>
+                        <p>click count <span>0</span></p>
+                    </div>
+                </div>
+                <div class="col pre-game">
+                    <form id="form-player">
+                        First Name: <input class="f-name" type="text" name="fname>"><br>
+                        <input class="player-buttom" type="button" value="set form">
+                        <select class="game-setting">
+                            <option value="easy">Easy</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </form>
+                </div>
             </div>
-            <div class="col gamePlace" id ="box-A2">
-                box-A2
+            <div class="row score-area">
+                <div id="mainPlayer" class="col player">
+                    <div class=" col-12 in-game ">
+                        <p>Mean Machine</p>
+                        <p>click count <span>0</span></p>
+                    </div>
+                </div>
             </div>
-            <div class="col gamePlace" id ="box-A3">
-                box-A3
+            <div class="row game-area">
+                <div class="col gamePlace box">
+                    box-A1
+                </div>
+                <div class="col gamePlace box">
+                    box-A2
+                </div>
+                <div class="col gamePlace box">
+                    box-A3
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col gamePlace" id ="box1">
-                box-B1
+            <div class="row">
+                <div class="col gamePlace box">
+                    box-B1
+                </div>
+                <div class="col gamePlace box">
+                    box-B2
+                </div>
+                <div class="col gamePlace box">
+                    box-B3
+                </div>
             </div>
-            <div class="col gamePlace" id ="box2">
-                box-B2
+            <div class="row">
+                <div class="col gamePlace box">
+                    box-C1
+                </div>
+                <div class="col gamePlace box">
+                    box-C2
+                </div>
+                <div class="col gamePlace box">
+                    box-C3
+                </div>
             </div>
-            <div class="col gamePlace" id ="box3">
-                box-B3
-            </div>
-        </div>
-        <div class="row">
-            <div class="col gamePlace" id ="box">
-                box-C1
-            </div>
-            <div class="col gamePlace" id ="box">
-                box-C2
-            </div>
-            <div class="col gamePlace" id ="box">
-                box-C3
-            </div>
-        </div>
      </div>
      <div class="container ">
          <div class="row">
              <div class="col">
                  <button type="button" class="btnClear">Clear</button>
+                 <button type="button" class="rematch">rematch</button>
              </div>
          </div>
      </div>
 
 
     <p><a href="./index.html">home</a><p>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-</body>
+        <!-- Latest compiled and minified JavaScript -->
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="main.js"></script>
+    </body>
 </html>
