@@ -11,75 +11,95 @@
     </head>
     <body>
         <p>TIC TAK TOE</p>
-        <div class="container gameboard">
-            <div class="row score-area">
-                <div id="mainPlayer" class="col player">
-                    <div class=" col in-game d-none">
-                        <p><span class="player-name"></p>
-                        <p>click count <span>0</span></p>
+        
+        <div class="container">
+            <div class="row score-board">
+                <div id="player1" class="col-6 player" data-player="player1">
+                    <div class="col-12 in-game d-none">
+                        <p><span class="player-name"></span>: <span class="game-setting"></span></p>
+                        <p class="player-count">click count <span>0</span></p>
                     </div>
+                    <div class="col-12 pre-game">
+                        <form id="formplayer1">
+                            First name: <input class="f-name" type="text" name="fname"><br>
+                            <input class="player-button" type="button" value="Set form">
+                        </form>
+                    </div>  
                 </div>
-                <div class="col pre-game">
-                    <form id="form-player">
-                        First Name: <input class="f-name" type="text" name="fname>"><br>
-                        <input class="player-buttom" type="button" value="set form">
-                        <select class="game-setting">
-                            <option value="easy">Easy</option>
-                            <option value="hard">Hard</option>
-                        </select>
-                    </form>
-                </div>
-            </div>
-            <div class="row score-area">
-                <div id="mainPlayer" class="col player">
-                    <div class=" col-12 in-game ">
-                        <p>Mean Machine</p>
-                        <p>click count <span>0</span></p>
+                <div id="player2" class="col-6 player"  data-player="player2">
+                    <div class="col-12 in-game d-none">
+                        <p><span class="player-name"></span>: <span class="game-setting"></span></p>
+                        <p class="player-count">click count <span>0</span></p>
                     </div>
-                </div>
-            </div>
-            <div class="row game-area">
-                <div class="col gamePlace box">
-                    box-A1
-                </div>
-                <div class="col gamePlace box">
-                    box-A2
-                </div>
-                <div class="col gamePlace box">
-                    box-A3
+                    <div class="col-12 pre-game">
+                        <form id="formplayer2">
+                            First name: <input class="f-name" type="text" name="fname"><br>
+                            <input class="player-button" type="button" value="Set form">
+                            <select class="game-setting">
+                                <option value="easy">Easy</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                        </form>
+                    </div>  
                 </div>
             </div>
             <div class="row">
-                <div class="col gamePlace box">
-                    box-B1
-                </div>
-                <div class="col gamePlace box">
-                    box-B2
-                </div>
-                <div class="col gamePlace box">
-                    box-B3
-                </div>
-            </div>
+                <div class="col-4 board-piece" data-player="" data-id="0">
+                    <p></p>
+                </div><!-- -->
+    
+                <div class="col-4 board-piece" data-player="" data-id="1">
+                <p></p> 
+                  
+            </div><!-- -->
+    
+            <div class="col-4 board-piece" data-player="" data-id="2">
+                <p></p>    
+            </div><!-- -->
+      
+            </div><!-- row-->
             <div class="row">
-                <div class="col gamePlace box">
-                    box-C1
-                </div>
-                <div class="col gamePlace box">
-                    box-C2
-                </div>
-                <div class="col gamePlace box">
-                    box-C3
-                </div>
-            </div>
-     </div>
-     <div class="container ">
-         <div class="row">
-             <div class="col">
-                 <button type="button" class="btnClear">Clear</button>
-                 <button type="button" class="rematch">rematch</button>
-             </div>
-         </div>
-     </div>
+           
+            <div class="col-4 board-piece" data-player="" data-id="3">
+                    <p></p>
+            </div><!---->
+    
+            <div class="col-4 board-piece" data-player="" data-id="4">
+                <p></p> 
+                  
+            </div><!---->
+    
+            <div class="col-4 board-piece" data-player="" data-id="5">
+                <p></p>    
+            </div><!---->
+    
+            </div><!-- row-->
+            <div class="row">
+           
+            <div class="col-4 board-piece" data-player="" data-id="6">
+                    <p></p>
+            </div><!---->
+    
+            <div class="col-4 board-piece" data-player="" data-id="7">
+                    <p></p> 
+    
+            </div><!---->
+    
+            <div class="col-4 board-piece" data-player="" data-id="8">
+                    <p></p>    
+            </div><!---->
+            
+            </div><!-- row-->
+        </div><!-- container-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <button type="button" class="btn btn-primary reset-games d-none">Restart Game</button>
+                    <button type="button" class="btn btn-primary rematch d-none">Rematch</button>
+    
+                    </div>
+            </div><!-- row-->
+        </div><!-- container-->
 
 
     <p><a href="./index.html">home</a><p>
